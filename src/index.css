@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  @apply bg-base-200;
+}
+
+/* Editor-specific styles */
+.editor-input {
+  @apply min-h-96 p-4 border-2 border-base-300 rounded-b-lg;
+  @apply focus:border-primary focus:outline-none;
+  @apply bg-base-100 text-base-content;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.editor-placeholder {
+  @apply absolute top-4 left-4 text-base-content/40 pointer-events-none;
+}
+
+/* Lexical editor theme classes */
+.editor-paragraph {
+  @apply mb-3;
+}
+
+.editor-heading-h1 {
+  @apply text-4xl font-bold mb-4 mt-6 text-base-content;
+}
+
+.editor-heading-h2 {
+  @apply text-3xl font-bold mb-3 mt-5 text-base-content;
+}
+
+.editor-heading-h3 {
+  @apply text-2xl font-bold mb-2 mt-4 text-base-content;
+}
+
+.editor-quote {
+  @apply border-l-4 border-primary pl-4 my-4 italic text-base-content/70;
+}
+
+.editor-list-ul,
+.editor-list-ol {
+  @apply my-3 pl-8;
+}
+
+.editor-listitem {
+  @apply mb-2;
+}
+
+.editor-text-bold {
+  @apply font-bold;
+}
+
+.editor-text-italic {
+  @apply italic;
+}
+
+.editor-text-underline {
+  @apply underline;
+}
+
+.editor-text-strikethrough {
+  @apply line-through;
+}
