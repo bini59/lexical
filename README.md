@@ -84,36 +84,6 @@ yarn dev
 yarn build
 ```
 
-## 🎨 스타일링 (Tailwind CSS v4 + DaisyUI)
-
-이 프로젝트는 Tailwind CSS v4와 DaisyUI를 사용합니다.
-
-### Tailwind CSS v4 특징
-- **Zero-config**: postcss.config.js 불필요
-- **CSS-first**: `@import "tailwindcss"` 로 간단히 사용
-- **Plugin 시스템**: `@plugin "daisyui"` 로 플러그인 추가
-
-### DaisyUI 컴포넌트
-- `navbar`: 헤더 네비게이션
-- `card`, `card-body`: 카드 컴포넌트
-- `btn`, `btn-primary`: 버튼 스타일
-- `mockup-code`: 코드 블록 디스플레이
-- `footer`: 푸터 레이아웃
-
-### CSS 커스터마이징
-
-`src/index.css` 파일에서 커스터마이징:
-
-```css
-@import "tailwindcss";
-@plugin "daisyui";
-
-/* 커스텀 스타일 추가 */
-.your-custom-class {
-  @apply bg-primary text-white;
-}
-```
-
 ## 📚 주요 기능
 
 ### ✅ HTML Import/Export
